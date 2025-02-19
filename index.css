@@ -1,0 +1,214 @@
+/* Stiluri generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2193b0;
+    font-size: 2.5rem;
+}
+
+.benefits-section, .development-process {
+    padding: 80px 0;
+    background: white;
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item h3 {
+    color: #2193b0;
+    margin-bottom: 15px;
+}
+
+/* Liste și elemente de listă */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+li::before {
+    content: "•";
+    color: #2193b0;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .benefits-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .benefits-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .benefits-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .benefits-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .benefits-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+    
+    .benefit-item {
+        padding: 20px;
+    }
+    
+    .benefits-section, .development-process {
+        padding: 40px 0;
+    }
+}
+
+/* Adăugăm și proprietăți pentru o mai bună scalare */
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.benefit-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #4a4a4a;
+    color: #2193b0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.5);
+    margin: 40px auto;
+    display: block;
+}
+
+.benefit-button:hover {
+    background-color: #5a5a5a;
+    transform: scale(1.6);
+}

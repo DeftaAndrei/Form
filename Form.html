@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Information Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Business Information Form</h1>
+        </div>
+        <div class="card-content">
+            <form id="businessForm" class="space-y-4">
+                <div class="grid-2">
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Business Name *
+                        </label>
+                        <input
+                            type="text"
+                            name="businessName"
+                            class="form-input"
+                        />
+                        <p class="error-message" id="businessNameError"></p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Owner/Contact Name *
+                        </label>
+                        <input
+                            type="text"
+                            name="ownerName"
+                            class="form-input"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Email *
+                        </label>
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-input"
+                        />
+                        <p class="error-message" id="emailError"></p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Phone Number *
+                        </label>
+                        <input
+                            type="tel"
+                            name="phone"
+                            class="form-input"
+                        />
+                        <p class="error-message" id="phoneError"></p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Website (if any)
+                        </label>
+                        <input
+                            type="url"
+                            name="website"
+                            class="form-input"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Industry
+                        </label>
+                        <input
+                            type="text"
+                            name="industry"
+                            class="form-input"
+                            placeholder="Enter your industry"
+                            title="Industry field"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Primary Business Location
+                        </label>
+                        <input
+                            type="text"
+                            name="primaryLocation"
+                            class="form-input"
+                            placeholder="Main business address"
+                            title="Primary business location"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            City
+                        </label>
+                        <input
+                            type="text"
+                            name="city"
+                            class="form-input"
+                            placeholder="City name"
+                            title="City field"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Country
+                        </label>
+                        <input
+                            type="text"
+                            name="country"
+                            class="form-input"
+                            placeholder="Country name"
+                            title="Country field"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Additional Locations
+                        </label>
+                        <textarea
+                            name="additionalLocations"
+                            class="form-input"
+                            rows="2"
+                            placeholder="List any additional business locations or branches"
+                            title="Additional locations field"
+                        ></textarea>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Business Operation Hours
+                        </label>
+                        <input
+                            type="text"
+                            name="operationHours"
+                            class="form-input"
+                            placeholder="e.g., Mon-Fri 9AM-5PM"
+                            title="Business operation hours"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Service Delivery Method
+                        </label>
+                        <select
+                            name="serviceDelivery"
+                            class="form-input"
+                            title="Service delivery method"
+                        >
+                            <option value="">Select delivery method</option>
+                            <option value="inPerson">In Person Only</option>
+                            <option value="online">Online Only</option>
+                            <option value="hybrid">Hybrid (Both Online & In Person)</option>
+                            <option value="mobile">Mobile Service</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Service Area Radius
+                        </label>
+                        <input
+                            type="text"
+                            name="serviceRadius"
+                            class="form-input"
+                            placeholder="e.g., 50km, Nationwide, Global"
+                            title="Service area radius"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Target Markets
+                        </label>
+                        <textarea
+                            name="targetMarkets"
+                            class="form-input"
+                            rows="2"
+                            placeholder="List specific regions, countries, or markets you want to target"
+                            title="Target markets field"
+                        ></textarea>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Languages Supported
+                        </label>
+                        <input
+                            type="text"
+                            name="languages"
+                            class="form-input"
+                            placeholder="e.g., English, Spanish, Romanian"
+                            title="Languages supported"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Expansion Plans
+                        </label>
+                        <textarea
+                            name="expansionPlans"
+                            class="form-input"
+                            rows="2"
+                            placeholder="Describe any plans for geographic expansion"
+                            title="Expansion plans field"
+                        ></textarea>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Years in Business
+                        </label>
+                        <input
+                            type="number"
+                            name="yearsInBusiness"
+                            class="form-input"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Number of Employees
+                        </label>
+                        <input
+                            type="number"
+                            name="numberOfEmployees"
+                            class="form-input"
+                        />
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="form-label">
+                        Business Description
+                    </label>
+                    <textarea
+                        name="businessDescription"
+                        rows="3"
+                        placeholder="Please describe your business, its mission, and vision"
+                        class="form-input"
+                    ></textarea>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="form-label">
+                        Products/Services
+                    </label>
+                    <textarea
+                        name="products"
+                        rows="3"
+                        placeholder="List your main products or services"
+                        class="form-input"
+                    ></textarea>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="form-label">
+                        Target Audience
+                    </label>
+                    <textarea
+                        name="targetAudience"
+                        rows="2"
+                        placeholder="Describe your ideal customer"
+                        class="form-input"
+                    ></textarea>
+                </div>
+
+                <div class="grid-2">
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            Price Range
+                        </label>
+                        <input
+                            type="text"
+                            name="priceRange"
+                            placeholder="e.g., $100-$1000"
+                            class="form-input"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="form-label">
+                            
+                        </label>
+                        <input
+                            type="text"
+                            name="geographicScope"
+                            placeholder="e.g., Local, National, International"
+                            class="form-input"
+                        />
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="form-label">
+                        Marketing Goals
+                    </label>
+                    <textarea
+                        name="marketingGoals"
+                        rows="2"
+                        placeholder="What are your main marketing objectives?"
+                        class="form-input"
+                    ></textarea>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="form-label">
+                        Budget Range for Website
+                    </label>
+                    <select
+                        name="budget"
+                        class="form-input"
+                    >
+                        <option value="">Select a budget range</option>
+                        <option value="under-200">Under $200</option>
+                        <option value="200-300">$200 - $300</option>
+                        <option value="300-500">$300 - $500</option>
+                        <option value="500-1000">$500 - $1000</option>
+                        <option value="over-1000">Over $1000</option>
+                    </select>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="form-label">
+                        Additional Notes
+                    </label>
+                    <textarea
+                        name="additionalNotes"
+                        rows="3"
+                        placeholder="Any additional information or specific requirements"
+                        class="form-input"
+                    ></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Submit Business Information
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="Form.js"></script>
+</body>
+</html>
